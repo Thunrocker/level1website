@@ -1,0 +1,18 @@
+body{
+	background-color: #d4e0df;
+}
+h1,h2,h3,h4{
+	font-family: 'Titillium Web', sans-serif;
+}
+p,ul{
+	font-family: 'Open Sans', sans-serif;
+}
+article{
+	background-color: #def2f1;
+}
+nav{
+	background-color: #92c6c4;
+}
+footer{
+	background-color: #2b7a78;
+}
