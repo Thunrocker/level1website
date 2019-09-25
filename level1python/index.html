@@ -4,19 +4,23 @@
 		<meta charset="utf-8">
 		<title></title>
 		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
 		<link href="css/styles.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/hamburger_menu.js"></script>
 	</head>
 	<body>
 		<header>
 			<ul id='header_links'>
-				<li><a href='index.html'>Home</a></li>
-				<li><a href='tutorials.html'>Tutorials</a></li>
+				<li id='current_link'><a href='index.html'>Home</a></li>
+				<li><a href='functions.html'>Functions</a></li>
+				<li><a href='dictionaries.html'>Dictionaries</a></li>
 			</ul>
 		</header>
+		<img id='hamburger_btn' src='img/hamburger.png' alt='Side navigation button.' draggable='false'>
 		<section>
-			<img src='img/ptlogodark.png' draggable='false' id='logo'>
+			<img src='img/python-logo.png' draggable='false' id='logo'>
 			<div id='title'>
 				<h1>Python Tutorials</h1>
 				<h2><em>Guides for level two</em></h2>
@@ -33,10 +37,12 @@
 			<article>
 				<div class='text'>
 					<h2>Why should you take Level 2 DTC?</h2>
-					<img class='float_right'>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a augue massa. Mauris porttitor euismod purus, sed cursus lorem sodales a. In convallis varius euismod. Ut finibus vitae sapien nec lacinia. Sed sapien dui, placerat et commodo vitae, lacinia vel lacus. Ut sit amet posuere dui. Nulla in pellentesque arcu, quis scelerisque purus. Ut porta volutpat nisi et scelerisque. Quisque sit amet nibh porta, pulvinar libero id, sagittis ante.</p>
+					<img src='img/bunnanyganggang.png' alt="A picture of Bunna Ny and some of his students posed on the Great Wall of China" class='float_right'>
+					<p>I'm sure you've heard the classic adage, "Coding is the language of a future." And it's true, with technology being used more and more throughout our daily lives, learning to speak that langauge sounds like an awfully good idea.</p>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a augue massa. Mauris porttitor euismod purus, sed cursus lorem sodales a. In convallis varius euismod. Ut finibus vitae sapien nec lacinia. Sed sapien dui, placerat et commodo vitae, lacinia vel lacus. Ut sit amet posuere dui. Nulla in pellentesque arcu, quis scelerisque purus. Ut porta volutpat nisi et scelerisque. Quisque sit amet nibh porta, pulvinar libero id, sagittis ante. </p>
+					<p>And lucky for you, here at Onslow College, we have a great setup for you to learn how to code. Our DTC teachers, Mr Ny and Mr Hunt are both experienced and the field and are perfect to guide you throughout your coding journey.</p>
+
+					<p>Not sure you what level 2 DTC is all about? Then you've come to the right place. On this website, there are tutorials that have been specially prepared by Mr Ny, compiled into one website. It's the perfect place to get a headstart or to put your foot through the door. So what are you waiting for? Learn how to code right now!</p>
 					
 					<hr>
 
@@ -47,7 +53,11 @@
 				</div>
 			</article>
 		</main>
-		<footer>Yep</footer>
+		<footer>
+			<p id="footer_p"><a href="https://www.onslow.school.nz/">Onslow College</a> | <a href="https://www.python.org/">Python Foundation</a> | <a href="mailto:williamfrederickkho@gmail.com">Contact Me!</a></p>
+			<p>Content adapted from Bunna Ny's resources</p>
+
+		</footer>
 		<script src="js/rename-me.js"></script>
 	</body>
 </html>

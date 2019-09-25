@@ -3,17 +3,92 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-
 		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
 		<link href="css/styles.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/hamburger_menu.js"></script>
 	</head>
 	<body>
+		<header>
+			<ul id='header_links'>
+				<li><a href='index.html'>Home</a></li>
+				<li id='current_link'><a href='functions.html'>Functions</a></li>
+				<li><a href='dictionaries.html'>Dictionaries</a></li>
+			</ul>
+		</header>
+		<img id='hamburger_btn' src='img/hamburger.png' alt='Side navigation button.' draggable='false'>
+		<section>
+			<img src='img/python-logo.png' draggable='false' id='logo'>
+			<div id='title'>
+				<h1>Python Tutorials</h1>
+				<h2><em>Guides for level two</em></h2>
+			</div>
+		</section>
+		<div id='nav_triangle'></div>
+		<main>
+			<nav>
+				<ul>
+					<li>Link One</li>
+					<li>Link Two</li>
+				</ul>
+			</nav>
+			<article>
+				<div class='text'>
+					<h2>Functions</h2>
+					<h3>What is a function?</h3>
+					
 
+					<p>When a program is more than a few statements long, however, its readability and maintainability is usually improved if statements which belong together to perform distinct portions of the task are grouped together into named functions. </p>
+ 
+					<p>Calling a function (executing / performing the statements that it contains) requires just a single statement based on the function's name. </p>
 
+					<p>Modular programming is also convenient for sequences of code which need to be executed repeatedly. Rather than write the whole sequence of statements out again and again, the statements can be written just once in a function, and the function can be called repeatedly. </p>
 
+				
+					</pre>
+					
+					<hr>
 
+					<h3>How do I use Functions?</h3>
+
+					<p>A function has a definition - a statement starting with the keyword <span class='red'>def</span>, followed by the function's name, a set of parentheses <span class='red'>()</span> (which may or may not be empty) and a colon <span class='red'>:</span> . This statement is sometimes called the header. The statements which describe the behaviour of the function follow, each indented the same number of spaces (usually 4). </p>
+
+					<p><strong class='red'>This indentation is NOT optional.</strong><p>
+
+					<pre><span class='red'># a function should start with a comment briefly describing it's purpose</span>
+<span class='orange'>def</span> <span class='darkblue'>function_one</span>():
+<span class='red'># the function's statements go here, indented to the same level, usually 4 spaces</span>
+	<span class='purple'>print</span>(<span class='green'>"Gucci"</span>)
+	<span class='purple'>print</span>(<span class='green'>"Gang"</span>)</pre>
+
+					<p><strong class='red'>Any function must be defined / declared before it is called. </strong><p>
+
+					<p>Hence Python programs usually have function definitions listed first, and the main routine last. Functions are called by using a statement that consists of their name, including the parentheses. Here is a complete program with the same function definition as before, but now with a main routine which calls the function:</p>
+
+					<pre><span class='red'>#function definition</span> 
+<span class='orange'></span> <span class='darkblue'>function one</span>(): 
+	<span class='purple'>print</span>(<span class='green'>"Gucci"</span>) 
+	<span class='purple'>print</span>(<span class='green'>"Gang"</span>) 
+<span class='red'>#main routine calls functionOne two times</span> 
+function_one() <span class='red'>#this is a call to the function </span>
+functton one() <span class='red'>#this is a second call to the function </span>
+<span class='red'>#function being called repeatedly </span>
+<span class='orange'>for</span> i <span class='orange'>in</span> <span class='purple'>range(9): </span>
+	<span class=''>function one</span>() </pre>
+					 
+					
+					
+
+				</div>
+			</article>
+		</main>
+		<footer>
+			<p id="footer_p"><a href="https://www.onslow.school.nz/">Onslow College</a> | <a href="https://www.python.org/">Python Foundation</a> | <a href="mailto:williamfrederickkho@gmail.com">Contact Me!</a></p>
+			<p>Content adapted from Bunna Ny's resources</p>
+
+		</footer>
 		<script src="js/rename-me.js"></script>
 	</body>
 </html>

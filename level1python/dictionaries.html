@@ -3,17 +3,91 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-
 		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width">
 		<link href="css/styles.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap" rel="stylesheet">
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/hamburger_menu.js"></script>
 	</head>
 	<body>
+		<header>
+			<ul id='header_links'>
+				<li><a href='index.html'>Home</a></li>
+				<li><a href='functions.html'>Functions</a></li>
+				<li id='current_link'><a href='dictionaries.html'>Dictionaries</a></li>
+			</ul>
+		</header>
+		<img id='hamburger_btn' src='img/hamburger.png' alt='Side navigation button.' draggable='false'>
+		<section>
+			<img src='img/python-logo.png' draggable='false' id='logo'>
+			<div id='title'>
+				<h1>Python Tutorials</h1>
+				<h2><em>Guides for level two</em></h2>
+			</div>
+		</section>
+		<div id='nav_triangle'></div>
+		<main>
+			<nav>
+				<ul>
+					<li>Link One</li>
+					<li>Link Two</li>
+				</ul>
+			</nav>
+			<article>
+				<div class='text'>
+					<h2>Dictionaries</h2>
+					<img src='img/dictionaries.png'class='float_right'>
+					<h3>What are they?</h3>
 
+					<p>A standard data structure in Computer Science is the associative array which are also known as hashes or maps. In Python this is called the dictionary.  
+					Like lists, dictionaries can easily be changed, shrunk and grown at run time. Dictionaries can be contained in lists and vice versa. </p>
 
+					<h3>Lists vs Dictionaries</h3>
+					<p>Lists are ordered sets of objects, whereas dictionaries are unordered sets. The main difference is that items in dictionaries are accessed via keys and not via their position. When you have key-value-pairs, the key of the dictionary is associated (or mapped) to a value. Values can be any Python data type. </p>
+					
+					<hr>
 
+					<h3>Creating</h3>
+					<p>Let's create a dictionary of countries and their national food. In Python you declare a dictionary using a brace (curly bracket) and separate each item using a comma. </p>
 
+					<pre>country_food = {<span class='green'>"Italy"</span>:<span class='green'>"Pizza"</span>, <span class='green'>"Japan"</span>:<span class='green'>"Sushi"</span>, <span class='green'>"Spain"</span>:<span class='green'>"Paella"</span>, <span class='green'>"USA"</span>,<span class='green'>"Hamburger"</span>, <span class='green'>"Germany"</span>,<span class='green'>"Sauerkraut"</span></pre>
+
+					<p>The line above has declared a dictionary called countries with 5 pieces of data. If you think of a dictionary as a map, there are 5 inputs, and 5 outputs. In Python, inputs are called keys, and outputs are called values. </p>
+
+					<hr>
+
+					<p>Python is flexible. You can use all kinds of data types for both keys and values. You are free to mix and match data to suit your needs. The dictionary below contains the population of each country stored as an integer. </p>
+
+					<pre>country population = {<span class='green'>"Italy"</span>:60674003, <span class='green'>"Japan"</span>:126860000, <span class='green'>"Spain"</span>:46423064, <span class='green'>"USA"</span>:324735000, <span class='green'>"Germany"</span>:82175700}</pre>
+
+					<hr>
+
+					<h3>dict()</h3>
+
+					<p>Python has an built-in function that allows us to create a dictionaries. It is called dict().
+					We choose the name of the dictionary and pass in pairs of keys and values to the function. </p>
+
+					<pre>country_foods = (<span class='green'>"Italy"</span> = <span class='green'>"Pizza"</span>, <span class='green'>"Japan"</span> = <span class='green'>"Sushi"</span>, <span class='green'>"USA"</span>:<span class='green'>"Hamburger"</span>, <span class='green'>"Germany"</span>:<span class='green'>"Sauerkraut"</span>)</pre>
+
+					<p>Note how the keys did not needed to be wrapped in "" as a string. The dict function will do it automatically for you. dict() can be useful if we want to convert lists into dictionaries. Make sure that you have the orders correct in your lists! </p>
+
+					<pre>countries = [<span class='green'>"Italy"</span>, <span class='green'>"Japan"</span>, <span class='green'>"USA"</span> , <span class='green'>"Germany"</span>] 
+foods = [<span class='green'>"Pizza"</span>,<span class='green'>"Sushi"</span>, <span class='green'>"Hamburger"</span>, <span class='green'>"Sauerkraut"</span>]
+country_foods = dict(zip(countries, foods))</pre>
+
+					<pre><span class='red'>>>></span> country_foods 
+<span class="darkblue">{'USA': 'Hamburger', 'Italy': 'Pizza', 'Germany': 'Sauerkraut', 'Japan': 'Sushi'}</span> </pre>
+		
+
+				</div>
+			</article>
+		</main>
+		<footer>
+			<p id="footer_p"><a href="https://www.onslow.school.nz/">Onslow College</a> | <a href="https://www.python.org/">Python Foundation</a> | <a href="mailto:williamfrederickkho@gmail.com">Contact Me!</a></p>
+			<p>Content adapted from Bunna Ny's resources</p>
+
+		</footer>
 		<script src="js/rename-me.js"></script>
 	</body>
 </html>

@@ -36,7 +36,7 @@ section{
 	display: flex;
 	align-items: center;
 	height: 30vh;
-	background: url("../img/unnamed.png");
+	background: url("../img/background.png");
 	background-size: 100vmax;
 	background-color: silver;
 	padding-left: 100px;
